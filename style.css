@@ -24,7 +24,7 @@ h1 {
     margin-bottom: 25px;
 }
 
-/* Form */
+
 .form-container {
     background-color: #ffffff;
     padding: 25px;
@@ -60,7 +60,7 @@ input:focus {
     box-shadow: 0 0 0 2px rgba(23, 54, 93, 0.1);
 }
 
-/* Buttons */
+
 button {
     border: none;
     border-radius: 5px;
@@ -82,7 +82,7 @@ button:hover {
     margin-top: 20px;
 }
 
-/* Profile Card */
+
 .profile-card {
     background-color: #ffffff;
     border-radius: 10px;
@@ -106,7 +106,7 @@ button:hover {
     color: #1f2937;
 }
 
-/* Skills */
+
 .skills-section {
     margin-top: 25px;
 }
@@ -146,7 +146,7 @@ button:hover {
     white-space: nowrap;
 }
 
-/* Action Buttons */
+
 .actions {
     display: flex;
     gap: 10px;
@@ -165,7 +165,7 @@ button:hover {
     background-color: #6e2020;
 }
 
-/* Responsive */
+
 @media (max-width: 500px) {
     .skill-input {
         flex-direction: column;

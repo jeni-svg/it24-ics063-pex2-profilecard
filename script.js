@@ -1,4 +1,4 @@
-// Get HTML elements
+
 const studentName = document.getElementById("studentName");
 const course = document.getElementById("course");
 const language = document.getElementById("language");
@@ -16,13 +16,13 @@ const skillInput = document.getElementById("skillInput");
 const skillsList = document.getElementById("skillsList");
 const profileCard = document.getElementById("profileCard");
 
-// Message area
+
 const message = document.createElement("p");
 message.id = "message";
 document.querySelector(".form-container").appendChild(message);
 
 
-// Create Profile
+
 createBtn.addEventListener("click", function () {
 
     if (
@@ -44,7 +44,7 @@ createBtn.addEventListener("click", function () {
 });
 
 
-// Add Skill
+
 addSkillBtn.addEventListener("click", function () {
 
     const skill = skillInput.value.trim();
@@ -67,7 +67,7 @@ addSkillBtn.addEventListener("click", function () {
 });
 
 
-// Allow Enter key to add skill
+
 skillInput.addEventListener("keypress", function (event) {
 
     if (event.key === "Enter") {
@@ -76,7 +76,6 @@ skillInput.addEventListener("keypress", function (event) {
 });
 
 
-// Change Background
 changeBgBtn.addEventListener("click", function () {
 
     const backgrounds = [
@@ -97,7 +96,7 @@ changeBgBtn.addEventListener("click", function () {
 });
 
 
-// Remove Profile
+
 removeBtn.addEventListener("click", function () {
 
     displayName.textContent = "Student Name";
