@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef1f5;
+    color: #1f2937;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #17365d;
+    margin-bottom: 25px;
+}
+
+/* Form */
+.form-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+    border-top: 5px solid #17365d;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #17365d;
+    margin-bottom: 7px;
+    margin-top: 15px;
+}
+
+label:first-child {
+    margin-top: 0;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #b8c2cc;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #17365d;
+    box-shadow: 0 0 0 2px rgba(23, 54, 93, 0.1);
+}
+
+/* Buttons */
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 11px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #17365d;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #0f2745;
+}
+
+#createBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #17365d;
+}
+
+.profile-card h2 {
+    color: #17365d;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.profile-card p {
+    margin-bottom: 12px;
+    color: #4b5563;
+}
+
+.profile-card strong {
+    color: #1f2937;
+}
+
+/* Skills */
+.skills-section {
+    margin-top: 25px;
+}
+
+.skills-section h3 {
+    color: #17365d;
+    margin-bottom: 12px;
+}
+
+#skillsList {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+#skillsList li {
+    background-color: #e5eaf0;
+    color: #17365d;
+    padding: 7px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.skill-input {
+    display: flex;
+    gap: 8px;
+}
+
+.skill-input input {
+    flex: 1;
+}
+
+.skill-input button {
+    white-space: nowrap;
+}
+
+/* Action Buttons */
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.actions button {
+    flex: 1;
+}
+
+.remove-btn {
+    background-color: #8b2e2e;
+}
+
+.remove-btn:hover {
+    background-color: #6e2020;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .skill-input {
+        flex-direction: column;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+}

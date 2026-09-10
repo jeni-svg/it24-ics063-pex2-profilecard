@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Profile Card</h1>
+
+        <!-- Input Form -->
+        <div class="form-container">
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter student name">
+
+            <label for="course">Course</label>
+            <input type="text" id="course" placeholder="Enter course">
+
+            <label for="language">Favorite Programming Language</label>
+            <input type="text" id="language" placeholder="Enter programming language">
+
+            <button id="createBtn">Create Profile</button>
+        </div>
+
+        <!-- Profile Card -->
+        <div id="profileCard" class="profile-card">
+            <h2 id="displayName">Student Name</h2>
+
+            <p>
+                <strong>Course:</strong>
+                <span id="displayCourse">Not specified</span>
+            </p>
+
+            <p>
+                <strong>Favorite Language:</strong>
+                <span id="displayLanguage">Not specified</span>
+            </p>
+
+            <div class="skills-section">
+                <h3>Skills</h3>
+                <ul id="skillsList"></ul>
+
+                <div class="skill-input">
+                    <input type="text" id="skillInput" placeholder="Enter a new skill">
+                    <button id="addSkillBtn">Add Skill</button>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="changeBgBtn">Change Background</button>
+                <button id="removeBtn" class="remove-btn">Remove Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
